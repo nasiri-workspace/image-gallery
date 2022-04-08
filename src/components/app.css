@@ -6,11 +6,12 @@ header {
 
 body {
   margin: 0;
-  font-family: Nunito Sans;
 }
+
 h1 {
   text-align: center;
 }
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +20,7 @@ h1 {
   align-items: center;
   list-style: none;
 }
+
 .nav-item {
   width: 22%;
   margin: 10px;
@@ -27,19 +29,24 @@ h1 {
   float: left;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .nav-item :hover {
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.8);
 }
+
 img {
   width: 100%;
   height: auto;
 }
+
 .selected-image {
   border: 5px solid #21be008a;
 }
+
 .nav-item a {
   text-align: center;
 }
+
 @media (max-width: 1000px) {
   .nav-item {
     width: 46%;
@@ -53,8 +60,8 @@ img {
 
 .author {
   display: block;
-  background:  #dee2e6;
-  padding: 0.5rem;
+  background: #dee2e6;
+  padding: 12px;
   margin-top: 0px;
   margin-bottom: 20px;
 }
@@ -71,7 +78,7 @@ img {
 }
 
 .table-caption {
-  margin-top:40px;
+  margin-top: 40px;
   color: #6c757d;
   font-weight: 500;
 }
