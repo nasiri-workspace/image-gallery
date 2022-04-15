@@ -10,7 +10,7 @@ export function Gallery() {
   const onImageClick = (image) => {
     const imageId = image.id;
     const updated = selectedImages.includes(imageId)
-      ? selectedImages.filter((id) => id != imageId)
+      ? selectedImages.filter((id) => id !== imageId)
       : [...selectedImages, imageId];
     setSelectedImages(updated);
   };
@@ -29,7 +29,9 @@ export function Gallery() {
 
   return (
     <>
-      <p className="selected-images">Selected images: {selectedImages.length}</p>
+      <p className="selected-images">
+        Selected images: {selectedImages.length}
+      </p>
       <div className="search">
         <label className="hidden" htmlFor="searchBox">
           Search:

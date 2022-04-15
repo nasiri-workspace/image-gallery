@@ -11,14 +11,10 @@ export const GalleryContext = createContext({
   setSelectedImages: () => {},
 });
 
-
-
 export function App() {
   const [images, setImages] = useState([]);
   const [selectedImages, setSelectedImages] = useState([]);
-  const value = { selectedImages, setSelectedImages, images};
-  
-
+  const value = { selectedImages, setSelectedImages, images };
 
   useEffect(() => {
     fetch("https://picsum.photos/v2/list")

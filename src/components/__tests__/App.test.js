@@ -1,14 +1,12 @@
 import { render } from "@testing-library/react";
-import { App } from "../components/App";
-
-const original = console.error;
+import { App } from "../App";
 
 beforeEach(() => {
   console.error = jest.fn();
 });
 
 afterEach(() => {
-  console.error = original;
+  console.error = jest.fn();
 });
 
 describe("App", () => {
@@ -24,7 +22,7 @@ describe("App", () => {
   it("handle fetch failure", () => {
     jest.spyOn(global, "fetch").mockImplementation(() => {
       return Promise.reject({
-        error: "Some error",
+        error: "Some errors",
       });
     });
     render(<App />);
