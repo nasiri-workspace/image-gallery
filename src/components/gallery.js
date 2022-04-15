@@ -20,7 +20,6 @@ export function Gallery() {
       img.author.toLowerCase().includes(value.toLowerCase())
     );
     setFilteredImages(filteredImages);
-    console.log(value, filteredImages);
   };
 
   useEffect(() => {
