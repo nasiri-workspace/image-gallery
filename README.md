@@ -35,6 +35,10 @@ The following tools and libraries are preinstalled for you:
 
 - When a user clicks on an image, they should be taken to a detail view for that image which includes a larger version of thie image and extended information such as `width`, `height`, `url` and `download_url`
 
+### Image Placeholder
+
+- When a user mouse over the image in the gallery item page we should have a beer placeholder image fetched from 'https://placebear.com'
+
 ### Testing
 
 Bonus points for adding relevant tests
@@ -56,4 +60,3 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Credit to David Mosher
